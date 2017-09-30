@@ -11,7 +11,7 @@ int main()
 {
 	int a;
 	printf("Please input a number:\n");
-	scanf("%d",&a);
+	scanf("%d", &a);
 	Range(a);
 	return 0;
 }
