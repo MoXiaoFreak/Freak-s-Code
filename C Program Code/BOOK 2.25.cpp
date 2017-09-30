@@ -5,15 +5,15 @@ int main()
 	printf("D      D\n");
 	printf("D      D\n");
 	printf(" D    D \n");
-  printf("  DDDD  \n");
+	printf("  DDDD  \n");
 	printf("        \n");
 	printf("       Y\n");
 	printf("      Y \n");
 	printf("YYYYYY  \n");
 	printf("      Y \n");
 	printf("       Y\n");
-  printf("        \n");
-  printf("FFFFFFFF\n");
+	printf("        \n");
+	printf("FFFFFFFF\n");
 	printf("    F  F\n");
 	printf("    F  F\n");
 	printf("    F  F\n");
