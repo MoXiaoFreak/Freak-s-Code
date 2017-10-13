@@ -2,4 +2,4 @@
 
 ### Some simple code in C or in Java.
 ### Developed in SCU,SE
-### May make some mistake
+### May make some mistakes
