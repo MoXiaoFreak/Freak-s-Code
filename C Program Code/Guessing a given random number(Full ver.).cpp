@@ -5,12 +5,11 @@
 int main()
 {
 	int random, i = 1;
-	while(i = 1)
+	while(i == 1)
 	{
 		srand(time(0));
 		random = rand() % 101;
 		int input, count = 1;
-		printf("*************Freak's Guessing Game*************\n");
 		printf("There is a real random number.Please input a 0-100 number(an integer) to guess it:\n");
 		scanf("%d", &input);
 		for (;input != random;)
