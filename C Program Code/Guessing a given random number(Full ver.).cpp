@@ -5,7 +5,8 @@
 int main()
 {
 	int random, i = 1;
-	while(i == 1)
+	int playtime = 0, completetime = 0, losetime = 0;
+	while (i == 1)
 	{
 		srand(time(0));
 		random = rand() % 101;
@@ -23,17 +24,20 @@ int main()
 			if (count == GUESSTIMESLIMIT)
 			{
 				printf("Bad\n");
+				losetime++;
 				break;
 			}
 			if (input == random)
 			{
 				printf("Good\n");
+				completetime++;
 				break;
 			}
 		}
 		printf("type 1 to begin the next round, type 0 to end the game.\n");
-		scanf("%d",&i);
+		playtime++;
+		scanf("%d", &i);
 	}
 	printf(" Game Over. \n");
+	printf(" You played %d times,win %d times,lose %d times. \n",playtime,completetime,losetime);
 	return 0;
-}
