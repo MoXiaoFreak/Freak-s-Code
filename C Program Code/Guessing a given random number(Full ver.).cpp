@@ -4,9 +4,10 @@
 #define GUESSTIMESLIMIT 8
 int main()
 {
-	int random, i = 1;
-	int playtime = 0, completetime = 0, losetime = 0;
-	while (i == 1)
+	int random,playtime = 0, completetime = 0, losetime = 0;
+	char i = 'Y';
+	float winrate;
+	while (i == 'Y')
 	{
 		srand(time(0));
 		random = rand() % 101;
@@ -34,10 +35,17 @@ int main()
 				break;
 			}
 		}
-		printf("type 1 to begin the next round, type 0 to end the game.\n");
+		printf("type Y to begin the next round, type N to end the game.\n");
 		playtime++;
-		scanf("%d", &i);
+		scanf("%s", &i);
+		while ((i != 'Y') && (i != 'N'))
+		{
+			printf("invalid input.Try another.\n");
+			scanf("%s", &i);
+		}
 	}
+	winrate = float(completetime)/ float(playtime);
 	printf(" Game Over. \n");
-	printf(" You played %d times,win %d times,lose %d times. \n",playtime,completetime,losetime);
+	printf(" You played %d times,win %d times,lose %d times. Win rate:%f%\n", playtime, completetime, losetime,winrate*100);
 	return 0;
+}
