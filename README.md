@@ -1,5 +1,5 @@
-# Freak's Code of Grade 1
+# Freak's Codes of Grade 1
 
-### Some simple code in C or in Java.
+### Some simple codes written in C&Java.
 ### Developed in SCU,SE
-### May make some mistakes
+### May contain some mistakes
